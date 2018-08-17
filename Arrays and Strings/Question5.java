@@ -5,6 +5,7 @@
  */
 package question5;
 import java.util.Scanner;
+//Check if two strings will be equal when a character is deleted, modified or inserted in either of these
 /**
  *
  * @author Santosh G
