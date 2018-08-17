@@ -5,6 +5,7 @@
  */
 package question4;
 import java.util.Scanner;
+//Check if the string forms a palindrome on permutation
 /**
  *
  * @author Santosh G
