@@ -5,7 +5,7 @@
  */
 package question8;
 import java.util.Scanner;
-
+//Set entire row and column as zeros if an element in a matrix is 0
 /**
  *
  * @author Santosh G
