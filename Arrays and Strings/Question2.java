@@ -5,6 +5,7 @@
  */
 package question2;
 import java.util.Scanner;
+//Check if one string is a permutation of the other
 /**
  *
  * @author Santosh G
