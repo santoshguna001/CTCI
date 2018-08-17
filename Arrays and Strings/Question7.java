@@ -5,6 +5,7 @@
  */
 package question7;
 import java.util.Scanner;
+//Rotate a matrix by 90 degree
 /**
  *
  * @author Santosh G
