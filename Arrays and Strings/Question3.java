@@ -5,6 +5,7 @@
  */
 package question3;
 import java.util.Scanner;
+//URLify a string with spaces
 /**
  *
  * @author Santosh G
