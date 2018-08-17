@@ -5,6 +5,7 @@
  */
 package question6;
 import java.util.Scanner;
+//Compress a string Example: aabcccccaa to a2bc5a3
 /**
  *
  * @author Santosh G
