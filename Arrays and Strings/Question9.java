@@ -5,6 +5,7 @@
  */
 package question9;
 import java.util.Scanner;
+//Check if one string on performing rotation is another string or not
 /**
  *
  * @author Santosh G
