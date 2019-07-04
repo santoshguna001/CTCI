@@ -44,7 +44,7 @@ public class Question4 {
             }
         }
         
-        if(count_odd==1){
+        if(count_odd==1 || count_odd == 0){
             return true;
         }
         return false;
