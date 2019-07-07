@@ -32,7 +32,7 @@ class RouteBetweenNodes {
         return null;
     }
 
-    public static boolean checkRouteDFS(Node end, Node start) {
+    public static boolean checkRouteBFS(Node start, Node end) {
         if (start == end) {
             return true;
         }
@@ -51,6 +51,29 @@ class RouteBetweenNodes {
         return false;
     }
 
+    public static boolean checkRouteDFS(Node start, Node end) {
+        System.out.println("Hi");
+        if (start == end) {
+            return true;
+        }
+        Queue<Node> queue = new LinkedList<Node>();
+        queue.add(start);
+        while (!queue.isEmpty()) {
+            Node temp = queue.remove();
+            for (int i = 0; i < temp.size; i++) {
+                if (temp.nodes[i] == end) {
+                    System.out.print(temp.id + "-->");
+                    return true;
+                }
+                queue.add(temp.nodes[i]);
+                if (checkRouteDFS(temp.nodes[i], end)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         Node node = new Node(1);
         list[numberNodes++] = node;
@@ -58,7 +81,7 @@ class RouteBetweenNodes {
         node.addNode(1, new Node(4));
         node = getNode(2);
         node.addNode(1, new Node(3));
-        if (checkRouteDFS(getNode(3), getNode(1))) {
+        if (checkRouteDFS(getNode(1), getNode(3))) {
             System.out.println(getNode(3).id);
         } else {
             System.out.println(false);
